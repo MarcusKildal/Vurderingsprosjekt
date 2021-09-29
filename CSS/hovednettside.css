@@ -1,0 +1,179 @@
+html {
+  scroll-behavior: smooth; /* dette her for at når du trykker på et ord fra navbar at den scroler den for deg */
+}
+
+body{
+  background-color: white;
+  color: black;
+  width: 100%;
+  margin: auto;
+}
+h1 {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size:75px;
+  color: black;
+}
+hr {
+  height:5px ;
+  background-color:black;
+  border-width:50%;
+
+
+
+
+/* her er menu baren*/
+}
+.Menubar{
+  background-color: black;
+  width: 100%;
+  position: fixed; /* dette gjør at jeg kan scrolle og at den følger etter */
+}
+.navbar {
+  overflow: hidden;
+  width: 100%;
+  color: rgb(213, 213, 213);
+}
+
+.logo{
+  padding: 15px 21px;
+  background: url(../Logo.png);
+  background-size: 100%;
+  width: 100px;
+  height: 50px;
+}
+.logo:hover{
+  background: url('../videoer/Logo Animation.gif');
+  background-size: 100% 100%;
+
+}
+.navbar a {
+
+  float: left;
+  font-size: 16px;
+  color: lightgray;
+  text-align: center;
+  padding: 30px 21px;
+  text-decoration: none;
+  font-family: Arial,Helvetica,sans-serif;
+
+}
+.navbar a:hover{
+  color: white;
+}
+.Menubar {
+  display: flex;
+  flex-direction: row;
+  z-index: 1; /*dette her er det som velger hva skal ligge øverst*/
+}
+
+
+
+
+
+
+/*dette her er bildet å text oppå bildet*/
+.imgdiv {
+  height: 105vh;
+  width: 100%;
+  background: url("../bilder/image0-kopi.jpeg");
+  background-size: 100%;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.Marcustext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family:calibri;
+  font-size: 220px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+.main_picture{
+  display: flex;
+  flex-direction: row;
+}
+.divboks{
+  display:flex;
+  flex-direction:row;
+  width: 20vw;
+  height: 32vw;
+}
+
+.foto{
+  background: url("../bilder/1IMB_portretter-63 copy.jpg");
+  background-size: 100% 100%;
+  display:flex;
+  flex-direction:row;
+  width: 25vw;
+  height: 32vw;
+}
+
+.foto:hover{
+  background: url("../bilder/1IMB_portretter-63-kopi.jpg");
+  background-size: 100% 100%;
+}
+.after, .before{
+  position: relative;
+  transform: translate(-50%,0%);
+  left: 50%;
+}
+.after {
+  display: block;
+}
+.before {
+  display: none;
+}
+.foto:hover .after{
+  display: none;
+}
+.foto:hover .before{
+  display: block;
+}
+
+
+.bildet_tekst{
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 30px;
+  padding-left: 15px;
+  width: 40vw;
+  height: 25vw;
+}
+
+/*her er texten under Doppler effekten*/
+.tekstdoppler{
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 30px;
+  width: 50vw;
+  height: 10vw;
+
+}
+/*her er texten under for mussik videoen*/
+.tekstmussik{
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 30px;
+  width: 50vw;
+  height: 15vw;
+
+}
+/*her er bare slutten hvor det står copyright for litt pynt*/
+.enddiv{
+  font-family: Arial,Helvetica,sans-serif;
+  padding:2px;
+  background-color:black;
+  color: white;
+  width: 100%;
+  height: 3vw;
+}
